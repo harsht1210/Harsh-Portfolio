@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harsh Tembekar — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-mono">HT</span>
+                <span class="brand-divider"></span>
+                <span class="brand-name">Harsh Tembekar</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="mailto:harsht1201@gmail.com" class="nav-cta">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-label">
+                <span class="pulse-dot"></span>
+                <span>Available for Work</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line" data-aos="up">Harsh</span>
+                <span class="hero-title-line hero-title-italic" data-aos="up" data-delay="0.1">Tembekar</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                A passionate Full Stack Python Developer building efficient, scalable,
+                and beautiful web applications — where elegant design meets powerful engineering.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View Projects <span class="btn-arrow">→</span></a>
+                <a href="#about" class="btn-ghost">About Me</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="hero-counter">
+            <div class="counter-item">
+                <span class="counter-num">12+</span>
+                <span class="counter-label">Projects</span>
+            </div>
+            <div class="counter-divider"></div>
+            <div class="counter-item">
+                <span class="counter-num">3+</span>
+                <span class="counter-label">Years Learning</span>
+            </div>
+            <div class="counter-divider"></div>
+            <div class="counter-item">
+                <span class="counter-num">10+</span>
+                <span class="counter-label">Tech Skills</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-tag">About Me</div>
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="about-image-wrapper">
+                        <img src="./illustration/Images/Img1.png" alt="Harsh Tembekar" class="about-img">
+                        <div class="about-image-frame"></div>
+                        <div class="about-image-accent"></div>
+                    </div>
+                </div>
+                <div class="about-content-col">
+                    <h2 class="section-title">Crafting Digital<br><em>Experiences</em></h2>
+                    <p class="about-lead">
+                        I'm a Full Stack developer with a love for building things that live on the internet. My primary
+                        stack includes Python, Django, React, and JavaScript — I bridge beautiful frontends with
+                        powerful backends.
+                    </p>
+                    <p class="about-body">
+                        I love solving real-world problems with clean code, smooth UX, and seamless backend integration.
+                        Every project is an opportunity to learn something new and push creative boundaries.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⬡</div>
+                            <div>
+                                <strong>Full Stack Development</strong>
+                                <p>Frontend + Backend integration</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⬡</div>
+                            <div>
+                                <strong>API & Database Design</strong>
+                                <p>RESTful APIs & database management</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⬡</div>
+                            <div>
+                                <strong>Responsive UI/UX</strong>
+                                <p>Beautiful, accessible interfaces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#projects" class="btn-primary">View My Work <span class="btn-arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section">
+        <div class="skills-bg"></div>
+        <div class="container">
+            <div class="section-tag">Technical Stack</div>
+            <h2 class="section-title text-center">Skills &amp; <em>Technologies</em></h2>
+            <p class="section-subtitle">Specialized in modern web development with a balance of powerful backends and
+                beautiful frontends.</p>
+
+            <div class="skills-grid">
+                <div class="skills-card skills-card-frontend">
+                    <div class="skills-card-header">
+                        <span class="skills-badge">Frontend</span>
+                        <h3>Client Side</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" style="--delay: 0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                                alt="jQuery">
+                            <div class="skill-info">
+                                <span class="skill-name">jQuery</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--w:78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-card skills-card-backend">
+                    <div class="skills-card-header">
+                        <span class="skills-badge skills-badge-backend">Backend</span>
+                        <h3>Server Side</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" style="--delay: 0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill skill-fill-gold" style="--w:90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 1">
+                            <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg"
+                                alt="Django" class="skill-img-wide">
+                            <div class="skill-info">
+                                <span class="skill-name">Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill skill-fill-gold" style="--w:82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 2">
+                            <img src="https://flask.palletsprojects.com/en/stable/_images/flask-name.svg" alt="Flask"
+                                class="skill-img-wide skill-flask">
+                            <div class="skill-info">
+                                <span class="skill-name">Flask</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill skill-fill-gold" style="--w:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" style="--delay: 3">
+                            <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
+                                alt="MySQL">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill skill-fill-gold" style="--w:76%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-tag">My Journey</div>
+            <h2 class="section-title">Education &amp; <em>Background</em></h2>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item timeline-item-active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year-badge">Currently Pursuing</div>
+                        <h3 class="timeline-institution">Swaraj College of Computer Studies</h3>
+                        <p class="timeline-degree">Bachelor of Computer Applications (BCA)</p>
+                        <p class="timeline-desc">Studying computer science fundamentals, software development, and
+                            modern programming paradigms.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year-badge">2019 – 2021</div>
+                        <h3 class="timeline-institution">Arihant College</h3>
+                        <p class="timeline-degree">Higher Secondary Education (Class XII)</p>
+                        <p class="timeline-desc">Completed higher secondary education with focus on science and
+                            mathematics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year-badge">2018 – 2019</div>
+                        <h3 class="timeline-institution">Regent High School</h3>
+                        <p class="timeline-degree">Secondary School Certificate (Class X)</p>
+                        <p class="timeline-desc">Completed foundational secondary education with strong academic
+                            performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="skills-bg"></div>
+        <div class="container">
+            <div class="section-tag">Portfolio</div>
+            <h2 class="section-title text-center">Featured <em>Projects</em></h2>
+            <p class="section-subtitle">A curated selection of work showcasing my development and design capabilities.
+            </p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+                <button class="filter-btn" data-filter="react">React</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img2.png" alt="K. Bennett Portfolio">
+                        <div class="project-overlay">
+                            <a href="https://famous-granita-99fe4d.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS</div>
+                        <h3 class="project-title">K. Bennett</h3>
+                        <p class="project-desc">Personal portfolio website designed for K. Bennett — showcasing work and
+                            biography with elegant layout.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/img5.png" alt="Oceanic & Shand Trust">
+                        <div class="project-overlay">
+                            <a href="https://enchanting-bavarois-16e4a1.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS</div>
+                        <h3 class="project-title">Oceanic & Shand Trust</h3>
+                        <p class="project-desc">Modern charity and donation platform layout built to highlight NGO
+                            activities and community impact.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/img6.png" alt="T. Davidson">
+                        <div class="project-overlay">
+                            <a href="https://jocular-douhua-d8480f.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS · Bootstrap</div>
+                        <h3 class="project-title">T. Davidson</h3>
+                        <p class="project-desc">Sleek portfolio template for creative professionals emphasizing clean
+                            visuals and smooth navigation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img3.png" alt="T. Hudson">
+                        <div class="project-overlay">
+                            <a href="https://rad-dolphin-fc5904.netlify.app/" target="_blank" class="project-link">View
+                                Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS · Bootstrap</div>
+                        <h3 class="project-title">T. Hudson</h3>
+                        <p class="project-desc">Responsive personal brand website with smooth scrolling and an elegant,
+                            modern UI design.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img4.png" alt="T. Sterling">
+                        <div class="project-overlay">
+                            <a href="https://calm-moonbeam-813e70.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS · Bootstrap</div>
+                        <h3 class="project-title">T. Sterling</h3>
+                        <p class="project-desc">Clean and elegant business website template suited for agencies and
+                            startups.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="html-css">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img13.png" alt="LevelM4">
+                        <div class="project-overlay">
+                            <a href="https://inquisitive-kringle-056de8.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">HTML · CSS · Bootstrap · AOS</div>
+                        <h3 class="project-title">LevelM4</h3>
+                        <p class="project-desc">Multi-section landing page with rich animation effects and AOS scroll
+                            integration.</p>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-featured" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/img7.png" alt="Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://690cbe62da892952b489d73e--timely-biscochitos-b7f000.netlify.app/"
+                                target="_blank" class="project-link">View Live <span>↗</span></a>
+                        </div>
+                        <div class="project-featured-badge">Featured</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · MUI Material</div>
+                        <h3 class="project-title">Admin Dashboard</h3>
+                        <p class="project-desc">Responsive admin dashboard with live counters and data visualization —
+                            built with React and Material UI.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img8.png" alt="J. Matthews">
+                        <div class="project-overlay">
+                            <a href="https://gleaming-sfogliatella-c7cfde.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · React Router · Bootstrap</div>
+                        <h3 class="project-title">J. Matthews</h3>
+                        <p class="project-desc">Creative personal webpage with smooth animations, routing, and
+                            professional aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/img9.png" alt="James Consulting">
+                        <div class="project-overlay">
+                            <a href="https://690cbee7bfa55e523a3173d8--singular-froyo-037b11.netlify.app/"
+                                target="_blank" class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · Props · Bootstrap</div>
+                        <h3 class="project-title">James Consulting</h3>
+                        <p class="project-desc">Professional consulting agency website focused on clean service
+                            presentation and layout composition.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img10.png" alt="Counter App">
+                        <div class="project-overlay">
+                            <a href="https://690cc27741943761b7005cf0--inquisitive-buttercream-7fbbb5.netlify.app/"
+                                target="_blank" class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · Redux · Bootstrap</div>
+                        <h3 class="project-title">Counter App</h3>
+                        <p class="project-desc">Interactive counter web app with dynamic number updates and Redux global
+                            state management.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img11.png" alt="Counter App Toolkit">
+                        <div class="project-overlay">
+                            <a href="https://690cc2e0f7e8154aa339d660--peaceful-lolly-47ea4a.netlify.app/"
+                                target="_blank" class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · Redux Toolkit</div>
+                        <h3 class="project-title">Counter App Toolkit</h3>
+                        <p class="project-desc">Redux Toolkit-based counter showcasing simplified global state
+                            management in React.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cat="react">
+                    <div class="project-img-wrap">
+                        <img src="./illustration/Images/Img12.png" alt="ToDo App">
+                        <div class="project-overlay">
+                            <a href="https://calm-sunflower-23a089.netlify.app/" target="_blank"
+                                class="project-link">View Live <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tech">React · Redux Toolkit</div>
+                        <h3 class="project-title">ToDo App</h3>
+                        <p class="project-desc">Modern task management app with add, update, and delete functionality
+                            using Redux Toolkit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-headline">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="footer-title">Ready to build<br><em>something great?</em></h2>
+                    <a href="mailto:harsht1201@gmail.com" class="btn-primary">Get In Touch <span
+                            class="btn-arrow">→</span></a>
+                </div>
+                <div class="footer-links-col">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Contact</h4>
+                        <ul>
+                            <li><a href="mailto:harsht1201@gmail.com">harsht1201@gmail.com</a></li>
+                            <li><a href="https://maps.app.goo.gl/p6BBw7fq3XJQB9Q68" target="_blank">Pune, India</a></li>
+                        </ul>
+                        <h4 class="footer-col-title" style="margin-top: 2rem;">Social</h4>
+                        <div class="social-row">
+                            <a href="https://www.linkedin.com/in/harsh-tembekar-308822152/" target="_blank"
+                                class="social-btn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Harsh Tembekar. All rights reserved.</p>
+                <p>Designed & Developed by <strong>Harsh Tembekar</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
